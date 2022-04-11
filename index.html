@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Macbook Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+</head>
+<body>
+<div class="grid grid-cols-2 gap-2">
+    <!--image part-->
+    <section>
+    <div class="mt-6 ml-2.5 px-8">
+        <img src="images/mac.png" width="500px">
+    </div>
+    </section>
+
+    <!--description part-->
+    <section>
+    <div class="mt-6 mr-4 pl-2">
+        <div>
+            <h1 class="font-bold text-center">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+            <br>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam amet asperiores atque autem blanditiis commodi delectus doloremque explicabo facilis illo itaque.  </p>
+        </div>
+        <br><br><br>
+
+        <!--memory part-->
+        <div>
+            <h2 class="font-bold">Memory</h2>
+          <button id="firstMemory-btn" type="button" class="border-solid border-2 border-black">8GB Memory</button>
+            <button id="secondMemory-btn" type="button" class="border-solid border-2 border-black">16GB Memory</button>
+        </div>
+
+        <br><br><br>
+
+
+        <!--storage part-->
+        <div>
+            <h2 class="font-bold">Storage</h2>
+            <button id="firstStorage-btn" type="button" class="border-solid border-2 border-black">256GB SSD Storage </button>
+            <button id="secondStorage-btn"  type="button" class="border-solid border-2 border-black">512GB SSD Storage</button>
+            <button id="thirdStorage-btn" type="button" class="border-solid border-2 border-black">1TB SSD Storage</button>
+
+
+
+
+        </div>
+
+        <br><br><br>
+
+        <!--delivery option-->
+        <div>
+            <h2 class="font-bold">Choose your delivery option</h2>
+            <button id="firstDelivery-btn" type="button" class="border-solid border-2 border-black">Saturday,9th April Free Prime Delivery </button>
+            <button id="secondDelivery-btn" type="button" class="border-solid border-2 border-black">Thursday,7th April Delivery charge $20</button>
+        </div>
+        <br><br><br>
+
+
+        <!--billing part-->
+
+        <div>
+            <table class=" border border-slate-400 width: 100% height:70px font-bold">
+
+                <thead>
+                <tr>
+                    <th class="border border-slate-300 font:bold ">Best Price</th>
+                    <th class="border border-slate-300 font:bold">$1299</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td  class="border border-slate-300 font:bold">Extra Memory Cost</td>
+                    <td  class="border border-slate-300 font:bold">$<span id="memory-cost">0</span></td>
+                </tr>
+                <tr>
+                    <td class="border border-slate-300 font:bold">Extra Storage Cost</td>
+                    <td  class="border border-slate-300 font:bold">$<span id="storage-cost">0</span></td>
+
+                </tr>
+                <tr>
+                    <td class="border border-slate-300 font:bold">Delivery charge</td>
+                    <td class="border border-slate-300">$<span id="delivery-cost">0</span></td>
+
+                </tr>
+
+                <tr>
+                    <td class="border border-slate-300 font:bold">Total price</td>
+                    <td  class="border border-slate-300 font:bold">$<span id="total-cost">1299</span></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <!--promo code-->
+        <div>
+            <h1 class="font-bold">Add Promo Code</h1>
+            <input id="promo-code" type="text" class="border-solid border-2 border-black">
+            <button id="apply-btn" type="button" class="bg-red-700 text-white">Apply</button>
+
+        </div>
+
+
+
+    </div>
+    </section>
+
+</div>
+<hr>
+<footer>
+    <h1  class="text-center font-bold">Total:$<span id="finalCost">1299</span></h1>
+
+</footer>
+
+
+
+<script src="macBookPro.js"></script>
+
+
+</body>
+</html>
